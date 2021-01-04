@@ -1,7 +1,15 @@
 from kiwoom.kiwoom import *
 
+import sys
+from PyQt5.QtWidgets import *
+
 
 class UI_class():
-    print('UI class')
+    def __init__(self):
+        print('UI class')
 
-    Kiwoom()
+        self.app = QApplication(sys.argv)
+
+        Kiwoom()
+
+        self.app.exec_()
